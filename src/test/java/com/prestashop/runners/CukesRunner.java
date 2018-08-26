@@ -18,6 +18,6 @@ import cucumber.api.junit.Cucumber;
 		features= {"src/test/resources/com/prestashop/features", 
 				"src/test/resources/com/ct_bnb/features"}, 
 		glue= {"com/prestashop/step_definitions", "com/ctbnb/step_definitions" },
-		dryRun = true
+		dryRun = false
 		)
 public class CukesRunner {}
