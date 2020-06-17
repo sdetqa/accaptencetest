@@ -30,6 +30,7 @@ public class LoginStepDefs {
 	public void the_user_is_on_the_login_page() {
 		// open webste
 		Driver.getDriver().get(ConfigurationReader.getProperty("url"));
+		Driver.getDriver().manage().window().fullscreen();
 		// go to login page
 		new HomePage().signin.click();
 	}

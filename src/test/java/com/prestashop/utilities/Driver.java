@@ -22,7 +22,8 @@ public class Driver {
 				driver = new FirefoxDriver();
 				break;
 			case "chrome":
-				WebDriverManager.chromedriver().setup();
+				
+				System.setProperty("webdriver.chrome.driver", "/Users/mac/git/acceptancetest/src/test/resources/Selenium/Drivers/chromedriver");
 				driver = new ChromeDriver();
 				break;
 			case "ie":
